@@ -7,6 +7,7 @@ import Radio from './Radio'
 import Loops from './Loops'
 import ReuseLoop from './reuseLoop'
 import Clock from './Clock'
+import NestedLooping from './NestedLooping'
 
 function App() {
 
@@ -72,17 +73,21 @@ function App() {
     // </div>
 
 
+    // <div>
+    //   <select onChange={(event) => setColor(event.target.value)}>
+    //     <option value="Blue">Blue</option>
+    //     <option value="Red">Red</option>
+    //     <option value="Yellow">Yellow</option>
+    //     <option value="Orange">Orange</option>
+    //   </select>
+    //   <Clock color={color}/>
+    // </div>
+
     <div>
-      <select onChange={(event) => setColor(event.target.value)}>
-        <option value="Blue">Blue</option>
-        <option value="Red">Red</option>
-        <option value="Yellow">Yellow</option>
-        <option value="Orange">Orange</option>
-      </select>
-      <Clock color={color}/>
+      <NestedLooping/>
     </div>
 
-    
+
   )
 }
 

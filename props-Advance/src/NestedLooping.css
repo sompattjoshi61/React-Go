@@ -1,0 +1,75 @@
+/* Styles for NestedLooping component */
+
+.nested-looping {
+  padding: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2937;
+}
+
+.nested-looping h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color:#ffffff;
+}
+
+.college-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.college-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.college-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.college-meta {
+  display: flex;
+  gap: 12px;
+  color: #4b5563;
+}
+
+.college-website a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.college-website a:hover {
+  text-decoration: underline;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.student-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.student-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.student-detail {
+  margin: 2px 0;
+  color: #374151;
+}
