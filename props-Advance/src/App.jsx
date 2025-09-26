@@ -6,6 +6,7 @@ import Skills from './Skills'
 import Radio from './Radio'
 import Loops from './Loops'
 import ReuseLoop from './reuseLoop'
+import Clock from './Clock'
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
   const[name, setName] = useState('')
   const[password, setPassword] = useState('')
   const[email, setEmail] = useState('')
+
+  const [color, setColor] = useState('Yellow')
 
   return (
     // <>
@@ -64,9 +67,22 @@ function App() {
     //   <Loops/>
     // </div>
 
+    // <div>
+    //   <ReuseLoop/>
+    // </div>
+
+
     <div>
-      <ReuseLoop/>
+      <select onChange={(event) => setColor(event.target.value)}>
+        <option value="Blue">Blue</option>
+        <option value="Red">Red</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Orange">Orange</option>
+      </select>
+      <Clock color={color}/>
     </div>
+
+    
   )
 }
 
