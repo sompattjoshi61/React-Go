@@ -4,7 +4,8 @@ import User from './User'
 import Wrapper from './Wrapper'
 import Skills from './Skills' 
 import Radio from './Radio'
-
+import Loops from './Loops'
+import ReuseLoop from './reuseLoop'
 
 function App() {
 
@@ -52,10 +53,19 @@ function App() {
     // </div>
 
 
+    // <div>
+    //   <h1>Handling Checkbox in React</h1>
+    //   {/* <Skills/> */}
+    //   <Radio/>
+    // </div>
+
+    // <div>
+    //   <h1>Loops in JSX</h1>
+    //   <Loops/>
+    // </div>
+
     <div>
-      <h1>Handling Checkbox in React</h1>
-      {/* <Skills/> */}
-      <Radio/>
+      <ReuseLoop/>
     </div>
   )
 }
